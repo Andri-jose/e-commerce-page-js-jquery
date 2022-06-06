@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/90bf8a4976.js" crossorigin="anonymous"></script>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Rubik&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/cart.css">
+    <title>Dietetica Naturaleza Directa</title>
+</head>
+<body>
+    <header id="header">
+        <div class="header_content">
+            <h1 class="header_title" onclick="location.href='home.html';"><i class="fab fa-pagelines"></i>Dietetica Naturaleza Directa</h1>
+            <div class="content_button">
+                <button type="submit" id="header_btn"><i class="fas fa-shopping-cart"></i></button>
+                <div class="box_btn"></div>
+            </div>
+        </div>
+        <article id="cart_content">
+            <div class="cart_title">
+                <p>Carrito de Compras</p>
+                <div><span id="cart_cancel"><i class="far fa-times-circle"></i></span></div>
+            </div>
+            <div class="cart_info">
+                <!-- warning that the cart is empty, folder js(cart) -->
+                <article id="cart_product">
+                    <!-- the selected item is shown, folder js(cart) -->
+                </article>
+                <div class="total_content">
+                    <div class="cart_total">
+                        <p class="price_text">Total: </p>
+                        <p class="price_total"><i class="fas fa-dollar-sign"><!-- the selected item is shown, folder js(cart) --></i></p>
+                    </div>
+                    <div class="cart_submit">
+                        <button type="submit" onclick="location.href='checkout.html';" class="cart_button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </header>
+    <main id="main_content">
+        <section id="main_products">
+                <section class="searcher">
+                    <form>
+                        <input type="text" name="searchBar" placeholder="¿Que desea elegir?" id="search_text">
+                    </form>
+                </section>
+                <section class="main_vegetables">
+                    <section class="vegetables" >
+                            <h2 class="vegetables_title title_space">Legumbres</h2>
+                            <article class="content_space" id="item1">
+                                <!-- products displayed in folder js(products) -->
+                            </article>
+                    </section>
+                    <section class="nuts">
+                            <h2 class="nuts_title title_space">Frutos Secos</h2>
+                            <article class="content_space" id="item2">
+                                <!-- products displayed in folder js(products) -->
+                            </article>
+                    </section>
+                    <section class="cereals">
+                            <h2 class="cereals_title title_space">Cereales</h2>
+                            <article class="content_space" id="item3">
+                                <!-- products displayed in folder js(products) -->
+                            </article>
+                    </section>
+                    <div class="alert show_alert">
+                         <span class="icon_alert"><i class="fa-solid fa-circle-xmark"></i></span>
+                         <p class="text_icon">Su producto ya fue agregado al carrito</p>
+                         <button type="button" class="btn_alert">Aceptar</button>
+                    </div>
+                </section>
+        </section>
+        
+       
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/products.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/render.js"></script>
+
+    
+</body>
+
+</html>
+

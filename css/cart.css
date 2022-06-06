@@ -1,0 +1,205 @@
+:root {
+    /*Primary colors*/
+    --clr-primary-gray: #DCDCDC;
+    --clr-primary-green: #228B22;
+    /*Neutral colors*/
+    --clr-secondary-black: #000000;
+    --clr-secondary-white: #FFFFFF;
+    --clr-third-hover-darkgreen: #006400;
+    --clr-third-hover-lightgray: #E6E6FA;
+    --ff-primary: 'Rubik', sans-serif;
+    --ff-secondary:'Mochiy Pop P One', sans-serif;
+   
+  }
+  /*reset the page*/
+  body{
+      font-size: 1.125rem;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+      text-rendering: optimizeSpeed;
+      line-height: 1.5;
+      text-align: center;
+      font-family: var(--ff-primary);
+  }
+  
+  *, *:before, *:after {
+      box-sizing: border-box;
+    }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul,
+  ol,
+  li {
+      margin: 0;
+      padding: 0;
+      line-height: 1.5rem;
+      
+  }
+  
+  a:link, a:visited, a:active {
+    text-decoration:none;
+  }
+  
+  li,
+  ul,
+  ol {
+    list-style: none;
+    
+  }
+  
+  img {
+      max-width: 100%;
+      
+    }
+  
+  input,
+  button,
+  textarea,
+  select {
+      font: inherit;
+    }
+
+
+
+
+/*cart of the page*/
+/*shopping cart container*/
+#cart_content{
+    position: fixed;
+    right: -34rem;
+    width: 34rem;
+    height: 100vh;
+    transition: 0.5s; 
+    background-color: #faf8f8;
+    margin-top: -2rem;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+  }
+  /*close the cart*/
+  #cart_content.active{
+    right: 0rem;
+  }
+  /*title in the cart*/
+  .cart_title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--clr-primary-green);
+    color: var(--clr-secondary-white);
+    border-radius: .3rem .3rem 0 0;
+    height: 2.5rem;
+    cursor: pointer;
+    margin-bottom: .8rem;
+  }
+  /*cancel icon in the cart*/
+  .cart_title .far{
+    font-size: 1.5rem;
+  }
+  /*hover of cancel icon of the cart*/
+  .cart_title .far:hover{
+    font-size: 1.6rem;
+  }
+  /* warning that the cart is empty, folder js(cart) */
+  .comment{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: .01rem solid var(--clr-primary-green);
+    margin-top: 1rem;
+    border-radius: .5rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: var(--clr-primary-green);
+  }
+  
+  /*product of shopping cart, folder js(cart)*/
+  .cart_element{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .8rem;
+    width: 32rem;
+  }
+  /*images of each product, folder js(cart)*/
+  .cart_img{
+    width: 6rem;
+    height: 6rem;
+  }
+  /*price and trash container, folder js(cart)*/
+  .trash_container{
+    width: 5rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  /*trash icon, folder js(cart)*/
+  .trash{
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+  }
+  
+  /*container of total price and submit in the cart*/
+  .cart_total{
+    display: flex;
+    justify-content: space-around;
+    color: var(--clr-primary-green);
+    height: 5rem;
+    padding-top: 2rem;
+  }
+  /*total price in the cart, folder js(cart)*/
+  .price_cart{
+    font-size: 1rem;
+  }
+  /*total price container cart*/
+  .price_total{
+    font-size: 1.8rem;
+  }
+  /*text of total in the cart*/
+  .price_text{
+    font-size: 1.8rem;
+  }
+  
+  /*unit quantity container, folder js(cart)*/
+  .unit_price{
+    display: flex;
+    width: 5rem;
+    justify-content: space-between;
+  }
+  /*unit minus, folder js(cart)*/
+  .minus{
+    cursor: pointer;
+  }
+  /*unit plus, folder js(cart)*/
+  .plus{
+    cursor: pointer;
+  }
+  
+  /*to buy button */
+  /*submit container of the cart*/
+  .cart_submit{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    height: 6.5rem;
+  }
+  /*submit button of the cart*/
+  .cart_button{
+    width: 20rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: rgb(36, 170, 36);
+    color: var(--clr-secondary-white);
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  /*hover submit button in cart*/
+  .cart_button:hover{
+    opacity: 0.7;
+    transition: 0.5s;
+  }
